@@ -1,1 +1,1 @@
-DATABASE_URL = "sqlite:///app/assets/northwind.db"
+DATABASE_URL = 'sqlite:///app/assets/northwind.db'

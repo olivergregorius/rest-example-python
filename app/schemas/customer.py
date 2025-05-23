@@ -1,7 +1,11 @@
-from pydantic import BaseModel
+from pydantic import BaseModel, ConfigDict
 
 
 class CustomerSchema(BaseModel):
+    model_config = ConfigDict(
+        from_attributes=True
+    )
+
     customerId: str
     companyName: str | None
     contactName: str | None
